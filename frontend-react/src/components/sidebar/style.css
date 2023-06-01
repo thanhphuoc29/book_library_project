@@ -1,0 +1,143 @@
+.nav-container-vertical {
+    background-color: white;
+    /* màu nền */
+    padding: 20px;
+    /* khoảng cách lề */
+    box-sizing: border-box;
+    /* tính cả border và padding vào kích thước */
+    width: 7vw;
+    top: 80px;
+    left: 0;
+    float: left;
+    position: sticky;
+    height: fit-content;
+}
+
+
+.header-nav-list-vertical {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    /* loại bỏ khoảng cách lề mặc định */
+    margin: 0;
+    /* loại bỏ margin mặc định */
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header-nav-item-vertical {
+    margin-bottom: 10px;
+    /* khoảng cách giữa các item */
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    color: #333;
+    /* màu chữ */
+    text-decoration: none;
+    /* loại bỏ gạch chân */
+    font-size: 14px;
+    display: block;
+    /* để link chiếm toàn bộ chiều rộng */
+    padding: 9px;
+    /* khoảng cách lề */
+}
+
+.header-nav-item-vertical:hover {
+    background-color: #ddd;
+    /* màu nền khi hover */
+    color: #333;
+    /* màu chữ khi hover */
+    border-radius: 5px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.admin {
+    /* display: none; */
+}
+
+.nav-toggle {
+    display: none;
+    /* Thêm CSS để tạo nút nhỏ */
+}
+
+.icon-admin {
+    color: #3498db;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.category-list {
+    background-color: #f5f6fa;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 2px 10px #718093;
+    border-radius: 5px;
+    height: fit-content;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: -18px;
+}
+
+.category-list li {
+    padding: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-toggle {
+    position: relative;
+}
+
+
+.category-list li:hover {
+    background-color: #45aaf2;
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px 0 #3498db;
+}
+
+.name-list {
+    border-bottom: 1px solid #30336b;
+}
+
+@media (max-width: 740px) {
+    .nav-container-vertical {
+        display: none;
+        background: white;
+        /* Màu nền trắng */
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        /* màu nền */
+        padding: 20px;
+        /* khoảng cách lề */
+        box-sizing: border-box;
+        /* tính cả border và padding vào kích thước */
+        width: 50vw;
+        top: 74px;
+        left: 0;
+        float: left;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .fa-bars {
+        display: block
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+}

@@ -1,0 +1,265 @@
+.book-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.book-detail {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    height: fit-content;
+    border-radius: 3px;
+}
+
+.book-cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Căn chỉnh phía trên */
+    /* padding: 10px; */
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.book-cover img {
+    width: 250px;
+    height: 300px;
+    /* object-fit: cover; */
+}
+
+.price {
+    color: red;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.book-detail-inf {
+    flex: 2;
+    margin-top: 0;
+    min-height: 410px;
+    overflow: hidden;
+}
+
+.btn-buy {
+    width: 90px;
+    background-color: #e84118;
+    margin-top: 10px;
+}
+
+.btn-buy:hover {
+    background-color: #c23616;
+}
+
+.total-price {
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+.book-descreption {
+    text-overflow: ellipsis;
+}
+
+.book-detail-inf h2 {
+    color: #2980b9;
+}
+
+.book-detail-inf p {
+    font-size: 16px;
+}
+
+.child {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    height: fit-content;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.description-detail p {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.content {
+    margin: 10px 10px;
+}
+
+.book-comment h2 {
+    background-color: #3498db;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 5px 20px 0 rgba(35, 156, 216, 0.2);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.view-container {
+    margin: 0 auto;
+    width: 93vw;
+    margin-left: 7vw;
+}
+
+.book-information {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.infor-element {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.input-inf {
+    width: 150px;
+    padding: 5px 10px;
+    border: 1px solid #636e72;
+    outline: none;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.input-inf:hover,
+.input-description:hover {
+    border: 1px solid #74b9ff;
+    box-shadow: 0 2px 4px #74b9ff;
+    transform: translateY(-2px);
+}
+
+.item-inf {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.input-description {
+    padding-left: 5px;
+    border: 1px solid #636e72;
+    outline: none;
+    height: 150px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.upload-image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.input-upload {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 1px dashed black;
+    position: absolute;
+    top: 25px;
+    opacity: 100;
+}
+
+.title-book-view {
+    text-align: center;
+}
+
+.basic-infor {
+    padding: 10px;
+}
+
+.flex-element {
+    margin: 20px;
+}
+
+.form-book-inf {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-submit {
+    margin-right: 22.5vw;
+    width: 120px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.upload-image img {
+    width: 300px;
+    max-height: 300px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.btn-quantity {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-quantity:hover {
+    background-color: #2980b9;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+@media only screen and (max-width: 740px) {
+
+    /* CSS cho màn hình nhỏ */
+    .book-cover {
+        margin-bottom: 20px;
+    }
+
+    .book-cover img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .book-detail {
+        margin: 20px auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+        height: fit-content;
+        border-radius: 3px;
+    }
+
+    .upload-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .book-detail-inf {
+        margin-left: 10px;
+    }
+}
