@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: book.project.BookProjectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.581 s - in book.project.BookProjectApplicationTests
