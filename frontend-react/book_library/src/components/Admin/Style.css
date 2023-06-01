@@ -1,0 +1,96 @@
+.container-list-books {
+    width: 93vw;
+    margin-left: 7vw;
+}
+
+.list-books {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.image_book {
+    width: 50px;
+    height: 60px;
+}
+
+.btn-primary {
+    margin-right: 2px;
+}
+
+.btn-primary,
+.btn-danger {
+    max-width: 60px;
+}
+
+.btn-add-book {
+    width: fit-content;
+    background-color: #2980b9;
+    height: 30px;
+    color: aliceblue;
+}
+
+.table-bordered {
+    overflow: auto;
+    width: 100%;
+}
+
+.book-header ul {
+    list-style-type: none;
+}
+
+.menu-admin {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #e67e22;
+    margin-bottom: 5px;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+.btn-admin {
+    max-width: 120px;
+}
+
+.search_books {
+    border: 1px solid blue;
+}
+
+.order-customer-infor-product {
+    display: flex;
+    width: 200px;
+}
+
+.order-customer-infor-product img {
+    width: 50px;
+    height: 50px;
+}
+
+.or-cus-edit-inf p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.btn-order {
+    height: 50px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 740px) {
+
+    /* CSS cho màn hình nhỏ */
+    .container-list-books {
+        width: 100%;
+        margin-left: 0;
+        overflow: auto;
+    }
+
+    .list-books {
+        width: 700px;
+        /* Đảm bảo bảng có đủ không gian ngang */
+        /* Đặt chiều cao của bảng */
+        white-space: wrap;
+        /* Ngăn các hàng xuống dòng */
+    }
+
+}
